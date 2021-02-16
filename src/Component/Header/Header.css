@@ -20,13 +20,16 @@
 .title {
   font-family: "Pacifico", cursive;
   color: white;
+  border: 3px solid red;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  border: 3px solid rgb(205, 43, 219);
 }
 
 .name {
@@ -37,10 +40,11 @@
 .search {
   color: white;
   font-weight: bolder;
+  border: 3px solid rgb(255, 255, 0);
 }
 
 .search input[type="text"] {
-  border: 1px solid #f6cd61;
+  border: 10px solid #f6cd61;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -73,10 +77,23 @@ button {
    ====== Medua Query for Search Box ====== 
    =========================== */
 
-@media only screen and (min-width: 150px) and (max-width: 780px) {
+@media only screen and (min-width: 150px) and (max-width: 950px) {
+  .header {
+    flex-direction: column;
+    /* 
+    align-items: center;
+    justify-content: space-evenly; */
+    padding: 20px;
+    border: 3px solid rgb(238, 230, 232);
+  }
   .search {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-evenly; */
     width: 40em;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px solid rgb(23, 226, 97);
   }
 }
 

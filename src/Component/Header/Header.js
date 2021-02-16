@@ -8,9 +8,7 @@ import Card from '../Card/Card';
 const Header = ({ searchMovie, query, setQuery, movies }) => {
     return (
         <Fragment>
-            {/* <p>Hello below Fragment</p> */}
             <div class="header">
-                {/* <p>Hello</p> */}
                 <h1 class="title">Movie-search</h1>
 
                 {/* Search form */}
@@ -22,11 +20,15 @@ const Header = ({ searchMovie, query, setQuery, movies }) => {
                             className="name"
                         >
                         </label> 
-                        <input   
+                        {/* <p>text input</p> */}
+                        <input 
+                            type="text"
+                            name="query"  
                             placeholder="i.e Guardians of the Galaxy Vol. 2"
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
                         /> 
+                        {/* <p>text button</p> */}
                         <button type="submit">Search</button>   
                     </form>
                 </div>

@@ -12,7 +12,7 @@ const Card = ({ movies }) => {
                     />
                     <div className="flex_card">
                         <p className="heading">{movie.Title}</p>
-                        <p className="heading">{movie.Year}</p>
+                        <p className="paragraph">{movie.Year}</p>
                         <br />                    
                     </div>    
                 </div>
