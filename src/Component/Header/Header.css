@@ -1,5 +1,3 @@
-/* HEADER.CSS */
-
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .input {
@@ -11,7 +9,7 @@
   font-size: 17px;
   font-weight: bolder;
   padding: 5px;
-  font-family: "Nanum Gothic" sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .paragraph {
@@ -27,13 +25,18 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
 .name {
   font-size: 20px;
   padding: 10px;
+}
+
+.search {
+  color: white;
+  font-weight: bolder;
 }
 
 .search input[type="text"] {
@@ -55,17 +58,20 @@ button {
   background-color: #dfad31;
   border: none;
   color: white;
-  font-weight: 16px;
+  font-weight: bolder;
+  font-size: 16px;
   padding: 20px;
   cursor: pointer;
 }
 
 .norminee {
-  border-radius: 4 px;
-  background-color: rgb(9, 136, 9);
+  border-radius: 4px;
+  background: rgb(9, 136, 9);
 }
 
-/* Media Query for Search Box */
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
 
 @media only screen and (min-width: 150px) and (max-width: 780px) {
   .search {
