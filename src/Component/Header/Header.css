@@ -10,17 +10,24 @@
   font-weight: bolder;
   padding: 5px;
   font-family: "Nanum Gothic", sans-serif;
+  border-radius: 0px 40px 0px 0px;
+  /* border: 3px solid rgb(255, 255, 0); */
+  background-color: #484846;
 }
 
 .paragraph {
   padding: 5px;
   color: #3da4ab;
+  border-radius: 0px 0px 40px 0px;
+  /* border: 3px solid rgb(255, 255, 0); */
+  background-color: #1f1f1e;
 }
 
 .title {
   font-family: "Pacifico", cursive;
   color: white;
-  border: 3px solid red;
+  /* border: 3px solid red; */
+  margin: 20px;
 }
 
 .header {
@@ -29,7 +36,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-  border: 3px solid rgb(205, 43, 219);
+  /* border: 30px solid rgb(205, 43, 219); */
 }
 
 .name {
@@ -37,19 +44,31 @@
   padding: 10px;
 }
 
+.search-form {
+  display: flex;
+  flex-direction: row;
+  /* width: 50em;
+  height: 10em; */
+  /* border: 30px solid rgb(0, 208, 255); */
+}
+
 .search {
+  /* display: flex;
+  flex-direction: row; */
+  width: 40em;
+  height: 10em;
   color: white;
   font-weight: bolder;
-  border: 3px solid rgb(255, 255, 0);
+  /* border: 3px solid rgb(255, 255, 0); */
 }
 
 .search input[type="text"] {
-  border: 10px solid #f6cd61;
+  border: 3px solid #f6cd61;
   background-color: black;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
-  border-radius: 2px;
+  border-radius: 40px 0px 0px 0px;
   width: 40em;
   padding: 20px;
 }
@@ -59,6 +78,8 @@
 }
 
 button {
+  width: 10em;
+  height: 5em;
   background-color: #dfad31;
   border: none;
   color: white;
@@ -74,7 +95,7 @@ button {
 }
 
 /* ===========================
-   ====== Medua Query for Search Box ====== 
+   ====== Media Query for Search Box ====== 
    =========================== */
 
 @media only screen and (min-width: 150px) and (max-width: 950px) {
